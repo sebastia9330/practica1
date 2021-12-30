@@ -11,8 +11,10 @@
 }
 .contenedor .barra{
    height: 80px;
-   width: 100%;
+   width: 200px;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   background-color: thistle;
+   margin-left: auto;
 }
