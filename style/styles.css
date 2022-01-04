@@ -1,20 +1,34 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
 }
 .contenedor{
     background-color: steelblue;
 }
-.contenedor .logo{
+.logo{
+    background-color: tomato;
     width: 5rem;
     height: 5rem;
-    border-radius: 100px;
+    border-radius: 0px;
+    margin-top: auto;
+    margin-left: auto;    
 }
 .contenedor .barra{
    height: 80px;
-   width: 200px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   width: 95rem;
+   display: inline-block;
+   position: relative;
+   top: -100px;
+   left:100px;
    background-color: thistle;
-   margin-left: auto;
+}
+.lista{
+    background-color: turquoise;
+    align-items: center;
+}
+li{
+    background-color: violet;
+    display: inline-block;
 }
