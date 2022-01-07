@@ -3,32 +3,52 @@
 }
 body{
     margin: 0;
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    min-height: 100vh;
 }
 .contenedor{
     background-color: steelblue;
+    width: 100%;
+    position: fixed;
 }
 .logo{
-    background-color: tomato;
     width: 5rem;
     height: 5rem;
-    border-radius: 0px;
-    margin-top: auto;
-    margin-left: auto;    
+    border-radius: 100px;
+    position: fixed;
+    z-index: 20;
+    top: 10px;
+    left: 15px;
+        
 }
-.contenedor .barra{
-   height: 80px;
-   width: 95rem;
-   display: inline-block;
+.barra{
+   width: 100%;
    position: relative;
-   top: -100px;
-   left:100px;
-   background-color: thistle;
+   top: 0;
+   left: 80px;
+   justify-content: center;
+   align-items: center;
+   z-index: 9;
+   background-color: steelblue;
 }
 .lista{
-    background-color: turquoise;
-    align-items: center;
+    list-style: none;
+    display: flex;
 }
-li{
-    background-color: violet;
-    display: inline-block;
+.link a{
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+}
+.link a:hover, .link.active a{
+    opacity: 1;
 }
